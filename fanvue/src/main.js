@@ -5,6 +5,7 @@ import router from './router'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
+import Tres from '@tresjs/core'
 
 // 方式二、定义特性标志
 // window.__VUE_PROD_DEVTOOLS__ = false;
@@ -14,6 +15,7 @@ const app = createApp(App)
 
 app.use(ElementPlus)
 app.use(router)
+app.use(Tres)
 app.mount('#app')
 
 // createApp(App).use(router).mount('#app')
