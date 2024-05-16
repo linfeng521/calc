@@ -7,15 +7,15 @@ import { useAnimations, useGLTF } from '@tresjs/cientos'
 // )
 
 const { scene: model, animations } = await useGLTF(
-//   "hu246_1.glb"
-"ugly-naked-bunny-animated.gltf"
+  "hu246_1.glb"
+// "ugly-naked-bunny-animated.gltf"
 )
 
-const { actions } = useAnimations(animations, model)
+// const { actions } = useAnimations(animations, model)
 
-const currentAction = ref(actions.Greeting)
+// const currentAction = ref(actions.Greeting)
 
-currentAction.value.play()
+// currentAction.value.play()
 
 </script>
 
